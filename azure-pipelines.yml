@@ -15,7 +15,7 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: test
-    projects: '**/*Tests/*.csproj'
+    projects: '**/*tests/*.csproj'
     arguments: '--configuration $(buildConfiguration)'
 
 - task: PublishTestResults@2
