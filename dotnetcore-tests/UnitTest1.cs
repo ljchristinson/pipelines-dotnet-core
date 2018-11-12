@@ -18,7 +18,8 @@ namespace dotnetcore_tests
           ViewResult result = controller.About() as ViewResult;
 
           // Assert
-          Assert.AreEqual("Your application description page.", result.ViewData["Message"]);
+          //Assert.AreEqual("Your application description page.", result.ViewData["Message"]);
+          Assert.AreEqual("Your application description page.!!!!", result.ViewData["Message"]);
         }
 
         [TestMethod]
