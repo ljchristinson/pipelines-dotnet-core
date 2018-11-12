@@ -2,10 +2,9 @@
 
 For information on how to use this repository, see [.NET Core](https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core).
 
-| Build status |
-|--------------|
-|[![Build Status](https://lchristinson.visualstudio.com/SampleProject/_apis/build/status/ljchristinson.pipelines-dotnet-core)](https://lchristinson.visualstudio.com/SampleProject/_build/latest?definitionId=2) |
-|[![Build Status](https://sonarcloud.io/api/project_badges/measure?project=ljchristinson_pipelines-dotnet-core&metric=alert_status)](https://sonarcloud.io/dashboard?id=ljchristinson_pipelines-dotnet-core) |
+| Build Status | SonarCloud Status |
+|--------------| ------------------|
+[![Build Status](https://lchristinson.visualstudio.com/SampleProject/_apis/build/status/ljchristinson.pipelines-dotnet-core)](https://lchristinson.visualstudio.com/SampleProject/_build/latest?definitionId=2) | [![Build Status](https://sonarcloud.io/api/project_badges/measure?project=ljchristinson_pipelines-dotnet-core&metric=alert_status)](https://sonarcloud.io/dashboard?id=ljchristinson_pipelines-dotnet-core) |
 
 # Contributing
 
