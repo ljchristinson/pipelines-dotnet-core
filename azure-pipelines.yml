@@ -38,4 +38,4 @@ steps:
     %USERPROFILE%\.dotnet\tools\dotnet-sonarscanner end /d:sonar.login="32bbef2a150290c6c38101e99b7dd4d861af0d61"
 
 # Check Quality Gate
-- task: sonarcloud-buildbreaker  
+- task: sonarcloud-buildbreaker@1
