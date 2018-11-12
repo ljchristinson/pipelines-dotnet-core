@@ -17,7 +17,7 @@ steps:
     command: test
       projects: '**/*Tests/*.csproj'
       arguments: '--configuration $(buildConfiguration)'
-	
+
 - task: PublishTestResults@2
   inputs:
     testRunner: VSTest
