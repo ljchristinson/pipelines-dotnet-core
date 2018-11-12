@@ -12,8 +12,8 @@ steps:
   displayName: 'Prepare analysis on SonarQube'
   inputs:
     SonarQube: 'SonarCloud'
-    projectKey: ljchristinson_pipelines-dotnet-core
-    projectName: pipelines-dotnet-core
+    projectKey: 32bbef2a150290c6c38101e99b7dd4d861af0d61
+    projectName: ljchristinson_pipelines-dotnet-core
     projectVersion: '$(AssemblyVersion)'
     extraProperties: |
      sonar.organization=ljchristinson-github
