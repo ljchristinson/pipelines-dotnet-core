@@ -12,11 +12,11 @@ steps:
     dotnet build --configuration $(buildConfiguration)
     dotnet publish --configuration $(buildConfiguration) --output $BUILD_ARTIFACTSTAGINGDIRECTORY
 
-- task:UnitTests
+- task: UnitTests
   inputs:
     command: test
-	projects: '**/*Tests/*.csproj'
-	arguments: '--configuration $(buildConfiguration)'
+      projects: '**/*Tests/*.csproj'
+      arguments: '--configuration $(buildConfiguration)'
 	
 - task: PublishTestResults@2
   inputs:
