@@ -8,6 +8,17 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- task: SonarSource.sonarqube.15B84CA1-B62F-4A2A-A403-89B77A063157.SonarQubePrepare@4
+  displayName: 'Prepare analysis on SonarQube'
+  inputs:
+    SonarQube: 'SonarCloud'
+    projectKey: ljchristinson_pipelines-dotnet-core
+    projectName: pipelines-dotnet-core
+    projectVersion: '$(AssemblyVersion)'
+    extraProperties: |
+     sonar.organization=ljchristinson-github
+     sonar.branch.name=$(Build.SourceBranchName)
+
 - script: |
     dotnet build --configuration $(buildConfiguration)
     dotnet publish --configuration $(buildConfiguration) --output $BUILD_ARTIFACTSTAGINGDIRECTORY
