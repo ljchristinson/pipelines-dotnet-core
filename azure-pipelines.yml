@@ -15,8 +15,8 @@ steps:
 - task: UnitTests
   inputs:
     command: test
-      projects: '**/*Tests/*.csproj'
-      arguments: '--configuration $(buildConfiguration)'
+    projects: '**/*Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
 
 - task: PublishTestResults@2
   inputs:
