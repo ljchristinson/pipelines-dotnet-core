@@ -11,15 +11,14 @@ steps:
 # Install SonarScanner
 - script: |
     dotnet tool install --global dotnet-sonarscanner
-
+    
 # Begin SonarScanner
 - script: |
     %USERPROFILE%\.dotnet\tools\dotnet-sonarscanner begin /k:"ljchristinson_pipelines-dotnet-core" /d:sonar.organization="ljchristinson-github" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login="32bbef2a150290c6c38101e99b7dd4d861af0d61" /v:"$(buildId)"
-
+    
 - script: |
     dotnet build --configuration $(buildConfiguration)
     dotnet publish --configuration $(buildConfiguration) --output $BUILD_ARTIFACTSTAGINGDIRECTORY
-
 - task: DotNetCoreCLI@2
   inputs:
     command: test
